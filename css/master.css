@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #F5F2F5; /* off white */
+}
+
+nav {
+}
+
+footer {
+  background-color: #637073; /*darker green */
+  font-family: "Josefin Sans", "Poiret One", "Arial", sans-serif;
+  font-weight: 200;
+  font-size: 10pt;
+  padding: 20px;
+}
+
+
+.logo_img {
+  width:50%;
+  display: inline-block;
+}
+/* added box-sizing:border-box; to allow the items to fit perfectly */
+.header_left {
+  display: flex;
+  width: 15%;
+  box-sizing: border-box;
+}
+/* Exteded width % to add up to 100% - fills header content area */
+.header_right {
+  display: flex;
+  width:85%;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+/* changed CSS to match class instead of semantic tag -- breaks up the header into two tags.  */
+.main_header {
+  padding: 10px;
+  display: flex;
+  justify-content:space-between;
+}
+
+/* should work regardless of semantic tag */
+.header_center {
+  text-align: center;
+}
+
+.header_center h2 {
+  color: #9C878A;
+  font-family: "Poiret One", "Josefin Sans", "Arial", sans-serif;
+  font-size: 15pt;
+}
+
+.header_center h1 {
+  color: #637073;
+  font-family: "Amatic SC", "Poiret One", "arial", sans-serif;
+  font-size: 60pt;
+}
+
+.nav_ul {
+  list-style-type: none;
+  padding-left: 0px;
+  font-family: "Poiret One", "Josefin Sans", "Arial", sans-serif;
+  font-weight: bolder;
+}
+
+.nav_ul li {
+  display: inline-block;
+  padding: 8px;
+}
+
+.nav_ul a {
+  color:#637073;
+  text-decoration: none;
+}
+
+.nav_ul a:hover {
+  color: #9C878A; /* tan */
+  font-style: italic;
+}
+
+.content {
+  display:block;
+  width: 70%;
+  margin:auto;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+.footer_left {
+  display: inline-block;
+  float:left;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.footer_left ul {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  line-height: 2.2;
+  margin-left: 10px;
+}
+
+.footer_right {
+  display: inline-block;
+  width: 25%;
+}
+
+.footer_center {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.footer_left a {
+  text-decoration: none;
+  color: #F5F2F5;
+}
+
+.footer_left img {
+  width: 15px;
+  padding:5px;
+}
+
+.footer_left li {
+  display: flex;
+  align-items: center;
+}
+
+.footer_right ul {
+  list-style-type: none;
+  text-align: right;
+  line-height: 2.2;
+}
+
+
+.footer_right a {
+  text-decoration: none;
+  color: #F5F2F5;
+}
+
+footer a:hover {
+  font-style: italic;
+}
+
+#bye {
+  color:#F5F2F5;
+  text-align: center;
+  margin: auto;
+  font-family: "Amatic SC", "Poiret One", "arial", sans-serif;
+  font-size: 25pt;
+}
+
+#c {
+  display: block;
+  margin:auto;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+
+/* Phone Screen CSS */
+
+@media only screen and (max-width: 720px) {
+  .logo_img {
+    width:25%;
+    display: block;
+    margin: auto;
+    }
+
+  .header_left {
+    display: inline;
+    width: 100%;
+    margin: 50px;
+  }
+
+  .header_right {
+    display: block;
+    margin: auto;
+    padding: 0;
+    width:100%;
+  }
+
+  .main_header {
+    padding: 10px;
+    display: block;
+    justify-content: center;
+    width:auto;
+  }
+
+  .nav_ul {
+    list-style-type: none;
+    font-family: "Poiret One", "Josefin Sans", "Arial", sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .nav_ul li {
+    display: inline;
+    padding: 8px;
+    text-align:center;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer_left {
+    display: block;
+    width: 100%;
+    margin:auto;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  footer img {
+    display: none;
+  }
+
+  .footer_left ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    width:auto;
+  }
+
+  .footer_left li {
+    display: inline;
+    width: 100%;
+  }
+
+  .footer_right {
+    display: block;
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer_right ul {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    width:auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+  .footer_right li {
+    display: block;
+    width: 100%;
+  }
+
+  .footer_center {
+    display: none;
+    text-align: center;
+    margin:auto;
+  }
+
+  #bye {
+    display: none;
+  }
+
+  #c {
+    display: block;
+    margin:auto;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+
+
+  }
+
+
+
+  /* footer {
+    display: none;
+    background-color: #637073;
+  } */

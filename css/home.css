@@ -1,0 +1,68 @@
+/* changed CSS to match class instead of semantic tag -- breaks up the header into two tags.  */
+.main_header {
+  padding: 10px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding:auto;
+  margin:50px 20px 20px 20px;
+}
+
+.grid_img {
+  width: 100%;
+}
+
+.content{
+display:block;
+width: 70%;
+margin:auto;
+box-shadow: 2px 2px 2px 2px grey;
+}
+
+#c {
+  display: block;
+  margin:auto;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+ #link {
+   color:#637073;
+   text-decoration: none;
+ }
+ #link:hover {
+   font-style: italic;
+}
+
+
+/* phone */
+
+@media only screen and (max-width: 720px) {
+
+  .main_header {
+    padding: 10px;
+    display: block;
+    justify-content:space-between;
+  }
+
+  .header_center {
+    margin-top: 50px;
+  }
+
+  .grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    padding:auto;
+    margin:50px 0px 30px 0px;
+  }
+
+
+}
